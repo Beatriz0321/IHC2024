@@ -1,0 +1,28 @@
+﻿<script>
+    var telefoneMask = IMask(
+        document.getElementById('Telefone'), {
+        mask: [
+            {
+                mask: '(00) 0000-0000',
+
+            },
+            {
+                mask: '(00) 00000-0000'
+            }
+        ],
+        lazy: true,
+        placeholderChar: '_'
+    });
+
+    var cepMask = IMask(
+        document.getElementById('CEP'), {
+        mask: [
+            {
+                mask: '00000-000',
+
+            }
+        ],
+        lazy: true,
+        placeholderChar: '_'
+    });
+</script>

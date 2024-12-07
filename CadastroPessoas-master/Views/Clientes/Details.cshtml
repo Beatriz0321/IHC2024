@@ -1,0 +1,118 @@
+﻿@model CadastroPessoas.Models.Cliente
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-primary">Detalhes do Cliente</h1>
+<hr />
+
+<h4 class="text-secondary">Informações Pessoais</h4>
+<dl class="row">
+    <dt class="col-sm-3 font-weight-bold">
+        @Html.DisplayNameFor(model => model.Nome)
+    </dt>
+    <dd class="col-sm-9">
+        @Html.DisplayFor(model => model.Nome)
+    </dd>
+
+    <dt class="col-sm-3 font-weight-bold">
+        @Html.DisplayNameFor(model => model.DataNascimento)
+    </dt>
+    <dd class="col-sm-9">
+        @Html.DisplayFor(model => model.DataNascimento)
+    </dd>
+
+    <dt class="col-sm-3 font-weight-bold">
+        @Html.DisplayNameFor(model => model.RG)
+    </dt>
+    <dd class="col-sm-9">
+        @Html.DisplayFor(model => model.RG)
+    </dd>
+
+    <dt class="col-sm-3 font-weight-bold">
+        @Html.DisplayNameFor(model => model.CPF)
+    </dt>
+    <dd class="col-sm-9">
+        @Html.DisplayFor(model => model.CPF)
+    </dd>
+
+    <dt class="col-sm-3 font-weight-bold">
+        @Html.DisplayNameFor(model => model.EstadoCivil)
+    </dt>
+    <dd class="col-sm-9">
+        @Html.DisplayFor(model => model.EstadoCivil)
+    </dd>
+</dl>
+
+<h4 class="text-secondary">Endereço</h4>
+<dl class="row">
+    <dt class="col-sm-3 font-weight-bold">
+        @Html.DisplayNameFor(model => model.Logradouro)
+    </dt>
+    <dd class="col-sm-9">
+        @Html.DisplayFor(model => model.Logradouro)
+    </dd>
+
+    <dt class="col-sm-3 font-weight-bold">
+        @Html.DisplayNameFor(model => model.Bairro)
+    </dt>
+    <dd class="col-sm-9">
+        @Html.DisplayFor(model => model.Bairro)
+    </dd>
+
+    <dt class="col-sm-3 font-weight-bold">
+        @Html.DisplayNameFor(model => model.Cidade)
+    </dt>
+    <dd class="col-sm-9">
+        @Html.DisplayFor(model => model.Cidade)
+    </dd>
+
+    <dt class="col-sm-3 font-weight-bold">
+        @Html.DisplayNameFor(model => model.UF)
+    </dt>
+    <dd class="col-sm-9">
+        @Html.DisplayFor(model => model.UF)
+    </dd>
+
+    <dt class="col-sm-3 font-weight-bold">
+        @Html.DisplayNameFor(model => model.CEP)
+    </dt>
+    <dd class="col-sm-9">
+        @Html.DisplayFor(model => model.CEP)
+    </dd>
+
+    <dt class="col-sm-3 font-weight-bold">
+        @Html.DisplayNameFor(model => model.Complemento)
+    </dt>
+    <dd class="col-sm-9">
+        @Html.DisplayFor(model => model.Complemento)
+    </dd>
+</dl>
+
+<h4 class="text-secondary">Filiação</h4>
+<dl class="row">
+    <dt class="col-sm-3 font-weight-bold">
+        @Html.DisplayNameFor(model => model.NomePai)
+    </dt>
+    <dd class="col-sm-9">
+        @Html.DisplayFor(model => model.NomePai)
+    </dd>
+
+    <dt class="col-sm-3 font-weight-bold">
+        @Html.DisplayNameFor(model => model.NomeMae)
+    </dt>
+    <dd class="col-sm-9">
+        @Html.DisplayFor(model => model.NomeMae)
+    </dd>
+</dl>
+
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">
+        <i class="bi bi-pencil-square"></i> Editar
+    </a>
+    <a asp-action="Index" class="btn btn-secondary">
+        <i class="bi bi-arrow-left"></i> Voltar para a Lista
+    </a>
+</div>

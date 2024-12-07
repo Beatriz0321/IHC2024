@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page - Cadastro de Clientes";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem-vindo ao Sistema de Cadastro de Clientes</h1>
+    <p class="lead">Este projeto foi desenvolvido para gerenciar de forma simples e eficiente o cadastro de clientes, incluindo funcionalidades completas de CRUD (Criar, Ler, Atualizar e Deletar).</p>
+
+    <hr class="my-4">
+
+    <h3>Funcionalidades principais:</h3>
+    <ul>
+        <li><strong>Cadastro de Clientes:</strong> Adicione novos clientes ao sistema de forma prática e rápida.</li>
+        <li><strong>Consulta de Clientes:</strong> Visualize informações detalhadas sobre seus clientes cadastrados.</li>
+        <li><strong>Edição de Clientes:</strong> Altere os dados dos clientes a qualquer momento, mantendo as informações atualizadas.</li>
+        <li><strong>Exclusão de Clientes:</strong> Remova clientes do sistema de forma fácil e segura quando necessário.</li>
+    </ul>
+
+    <hr class="my-4">
+
+    <p>Para começar, acesse as páginas de cadastro ou visualização de clientes usando o menu acima.</p>
+
+    <p>O sistema foi construído utilizando ASP.NET Core e oferece uma interface intuitiva para facilitar o uso e o gerenciamento de informações dos clientes.</p>
+
+    <a class="btn btn-primary btn-lg" href="@Url.Action("Index", "Clientes")" role="button">Ver Lista de Clientes</a>
+    <a class="btn btn-success btn-lg" href="@Url.Action("Create", "Clientes")" role="button">Cadastrar Novo Cliente</a>
+</div>
